@@ -2,6 +2,7 @@
 Route::group([
     'prefix'    =>  'zones',
     'namespace' =>  'AccessManager\Zones\Http\Controllers',
+    'middleware'    =>      'auth',
 ], function(){
 
     Route::get('/', [
