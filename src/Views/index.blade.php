@@ -26,7 +26,7 @@
                 <td>
                     {!! Form::open(['route'=>'zones.delete']) !!}
                     {!! Form::hidden('id', $zone->id) !!}
-                    <div class="btn-group-sm btn-group">
+                    <div class="btn-group-xs btn-group">
                         <a href="{{route('zones.edit', [$zone->id])}}" class="btn btn-default btn-flat">modify</a>
                         <button type="submit" class="btn btn-flat btn-danger" onclick="return confirm('Are You Sure?')">
                             Delete
